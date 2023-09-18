@@ -5,54 +5,54 @@
 class CanvasSync < Formula
   desc ""
   homepage "https://github.com/aidanaden/homebrew-tools"
-  version "1.3.0"
+  version "1.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.3.0/canvas-sync_Darwin_x86_64.tar.gz"
-      sha256 "d109a531d1f7538ff25f85c4addc2eb60e6d23b3caa069bd5b6104a8a57c30a3"
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.3.1/canvas-sync_Darwin_x86_64.tar.gz"
+      sha256 "851ee1ba0d4bbce4b20ec2bebe7e3acf5b81cf8782ed2c793e7cf3b274b00317"
 
       def install
-        bin.install "canvas_sync"
-        bash_completion.install "completions/canvas_sync.bash" => "canvas_sync"
-        zsh_completion.install "completions/canvas_sync.zsh" => "_canvas_sync"
-        fish_completion.install "completions/canvas_sync.fish"
+        bin.install "canvas-sync"
+        bash_completion.install "completions/canvas-sync.bash" => "canvas-sync"
+        zsh_completion.install "completions/canvas-sync.zsh" => "_canvas-sync"
+        fish_completion.install "completions/canvas-sync.fish"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.3.0/canvas-sync_Darwin_arm64.tar.gz"
-      sha256 "e090c3781ce2519a06383d2e1b8fc659648cfbbf1117f19a8d839b5b0755f2bc"
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.3.1/canvas-sync_Darwin_arm64.tar.gz"
+      sha256 "5d6a8522ead205ecdeedf3ba0460cbe35f0d4c2ac690f4a4e9e1063f0eb7851b"
 
       def install
-        bin.install "canvas_sync"
-        bash_completion.install "completions/canvas_sync.bash" => "canvas_sync"
-        zsh_completion.install "completions/canvas_sync.zsh" => "_canvas_sync"
-        fish_completion.install "completions/canvas_sync.fish"
+        bin.install "canvas-sync"
+        bash_completion.install "completions/canvas-sync.bash" => "canvas-sync"
+        zsh_completion.install "completions/canvas-sync.zsh" => "_canvas-sync"
+        fish_completion.install "completions/canvas-sync.fish"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.3.0/canvas-sync_Linux_arm64.tar.gz"
-      sha256 "2ed4fc2f2a58cf50acbc48f3c4da9806d2e7e883f79d11e15a64df1e36265ac6"
+    if Hardware::CPU.intel?
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.3.1/canvas-sync_Linux_x86_64.tar.gz"
+      sha256 "b5d18fa1c1f0d683fbd6e22b64c5b49fc48fc4456c68897edbd05608e4bfe60c"
 
       def install
-        bin.install "canvas_sync"
-        bash_completion.install "completions/canvas_sync.bash" => "canvas_sync"
-        zsh_completion.install "completions/canvas_sync.zsh" => "_canvas_sync"
-        fish_completion.install "completions/canvas_sync.fish"
+        bin.install "canvas-sync"
+        bash_completion.install "completions/canvas-sync.bash" => "canvas-sync"
+        zsh_completion.install "completions/canvas-sync.zsh" => "_canvas-sync"
+        fish_completion.install "completions/canvas-sync.fish"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.3.0/canvas-sync_Linux_x86_64.tar.gz"
-      sha256 "492652b72f86ab9a8594cad40545802fc41a5ff75b4f68909b3e7bc31ea3dfe5"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.3.1/canvas-sync_Linux_arm64.tar.gz"
+      sha256 "b30ad77dffab17157ac1b6f9ba02527ff01781cfbb09199d401d6b9921dee91b"
 
       def install
-        bin.install "canvas_sync"
-        bash_completion.install "completions/canvas_sync.bash" => "canvas_sync"
-        zsh_completion.install "completions/canvas_sync.zsh" => "_canvas_sync"
-        fish_completion.install "completions/canvas_sync.fish"
+        bin.install "canvas-sync"
+        bash_completion.install "completions/canvas-sync.bash" => "canvas-sync"
+        zsh_completion.install "completions/canvas-sync.zsh" => "_canvas-sync"
+        fish_completion.install "completions/canvas-sync.fish"
       end
     end
   end
