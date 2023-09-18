@@ -5,20 +5,20 @@
 class CanvasSync < Formula
   desc ""
   homepage "https://github.com/aidanaden/homebrew-tools"
-  version "1.1.2"
+  version "1.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.1.2/canvas-sync_Darwin_x86_64.tar.gz"
-      sha256 "faf7fd26eccd0af59a1815c2f83e7b054349e1a7d234745285175c7539d32edd"
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.1.3/canvas-sync_Darwin_x86_64.tar.gz"
+      sha256 "c7e4b1524b0362c729cb655004f8942e2811478ea885c63db676ad37efbae54a"
 
       def install
         bin.install "canvas-sync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.1.2/canvas-sync_Darwin_arm64.tar.gz"
-      sha256 "e3b7a1dd556643fff36fb426bdc1e93457a6d77430a179a202bf21a9ee5ab45f"
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.1.3/canvas-sync_Darwin_arm64.tar.gz"
+      sha256 "baf4259a938201cb0535779a724e558a4f4431cd856a8b03720a49bc9f00a1eb"
 
       def install
         bin.install "canvas-sync"
@@ -28,16 +28,16 @@ class CanvasSync < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.1.2/canvas-sync_Linux_x86_64.tar.gz"
-      sha256 "b5a4817b9fe43392d1615192076f66d453a27e26e19a8d1a856c3c769d1960d5"
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.1.3/canvas-sync_Linux_x86_64.tar.gz"
+      sha256 "340dea7ffd786092356ce3ab135f36c42d1538fdca553427c6f7d9fb643047a4"
 
       def install
         bin.install "canvas-sync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.1.2/canvas-sync_Linux_arm64.tar.gz"
-      sha256 "980ca51cd5fd7906385fc34806aae98c70c459362c462f2d69d365e87537ae36"
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.1.3/canvas-sync_Linux_arm64.tar.gz"
+      sha256 "83c884c15bdfd016c09f16772db6a2b7ffdf2dc7b63198e67a19059e09860da1"
 
       def install
         bin.install "canvas-sync"
