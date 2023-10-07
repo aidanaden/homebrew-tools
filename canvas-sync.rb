@@ -7,14 +7,14 @@ class CanvasSync < Formula
 & view (deadlines, events, announcements) from Canvas
 "
   homepage "https://github.com/aidanaden/canvas-sync"
-  version "1.26.28"
+  version "1.26.30"
 
   depends_on "ffmpeg"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.26.28/canvas-sync_Darwin_x86_64.tar.gz"
-      sha256 "52e0de2ea0b42985d875d0e0e27a682e91d0c2db0fc1a6cf80c6f1883a593b33"
+    if Hardware::CPU.arm?
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.26.30/canvas-sync_Darwin_arm64.tar.gz"
+      sha256 "e171b3b382d0f57cf000b745f338e04ed5254a290530b7f03a83f25d2284b719"
 
       def install
         bin.install "canvas-sync"
@@ -23,9 +23,9 @@ class CanvasSync < Formula
         fish_completion.install "completions/canvas-sync.fish"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.26.28/canvas-sync_Darwin_arm64.tar.gz"
-      sha256 "9c7775922fe02a6d8bfe71c37684de1d5cbe928d9fb4c8c9d89bc0514cf629c0"
+    if Hardware::CPU.intel?
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.26.30/canvas-sync_Darwin_x86_64.tar.gz"
+      sha256 "8254af0402522808285c52d8cbfa61c0aa7676759a0b2b72388c34bd06ed5ec0"
 
       def install
         bin.install "canvas-sync"
@@ -38,8 +38,8 @@ class CanvasSync < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.26.28/canvas-sync_Linux_x86_64.tar.gz"
-      sha256 "35898052dd0af5e96c36b4644e765026d0f8070555cc880a10a331db24644c91"
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.26.30/canvas-sync_Linux_x86_64.tar.gz"
+      sha256 "4287ce8330fa7b570a1a6df9db6fc1e7176059cfb96fb1bd7b247b8942483818"
 
       def install
         bin.install "canvas-sync"
@@ -49,8 +49,8 @@ class CanvasSync < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.26.28/canvas-sync_Linux_arm64.tar.gz"
-      sha256 "8b087e42d668b6392c4ee843e1283c850e10a44aa140e7eceb7d88bcef528d6e"
+      url "https://github.com/aidanaden/canvas-sync/releases/download/v1.26.30/canvas-sync_Linux_arm64.tar.gz"
+      sha256 "a03fdc789ba88f0ec99988a8a013027a9727343daa44468783550d8bef996485"
 
       def install
         bin.install "canvas-sync"
