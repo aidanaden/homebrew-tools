@@ -6,20 +6,20 @@ class Shamir < Formula
   desc "Shamir Secret Sharing CLI tool
 "
   homepage "https://github.com/aidanaden/shamir-zig"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/aidanaden/shamir-zig/releases/download/v0.1.0/shamir_0.1.0_darwin_amd64.tar.gz"
-      sha256 "564688d47919594568a034d7380448c64e68aece57ea5904f7f5988930a7e78e"
+      url "https://github.com/aidanaden/shamir-zig/releases/download/v0.1.1/shamir_0.1.1_darwin_amd64.tar.gz"
+      sha256 "bf57d0d2cc159b25a89d30d53b7403f9521ac9fa42e3ac1e9a19358f8a5807dc"
 
       def install
         bin.install "shamir"
       end
     end
     on_arm do
-      url "https://github.com/aidanaden/shamir-zig/releases/download/v0.1.0/shamir_0.1.0_darwin_arm64.tar.gz"
-      sha256 "564688d47919594568a034d7380448c64e68aece57ea5904f7f5988930a7e78e"
+      url "https://github.com/aidanaden/shamir-zig/releases/download/v0.1.1/shamir_0.1.1_darwin_arm64.tar.gz"
+      sha256 "9ad65517ccc1a5dd7106303c1fa3ee00f1df77bc95524845e58e749e4dbb2111"
 
       def install
         bin.install "shamir"
@@ -30,8 +30,8 @@ class Shamir < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aidanaden/shamir-zig/releases/download/v0.1.0/shamir_0.1.0_linux_amd64.tar.gz"
-        sha256 "564688d47919594568a034d7380448c64e68aece57ea5904f7f5988930a7e78e"
+        url "https://github.com/aidanaden/shamir-zig/releases/download/v0.1.1/shamir_0.1.1_linux_amd64.tar.gz"
+        sha256 "9bcaca00e25f55c211710d3d869ec5bbc7942afcee8f36f4bdd831fb686344f8"
 
         def install
           bin.install "shamir"
@@ -40,8 +40,8 @@ class Shamir < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aidanaden/shamir-zig/releases/download/v0.1.0/shamir_0.1.0_linux_arm64.tar.gz"
-        sha256 "77586c6a21f8d3c3a23dd76a1982f9770d11b3cc685f2cb0e7ed0cb086912234"
+        url "https://github.com/aidanaden/shamir-zig/releases/download/v0.1.1/shamir_0.1.1_linux_arm64.tar.gz"
+        sha256 "2e52785c08272dda2b4206e99cfb06fcad033225f412c771df9bba8a160dd1f4"
 
         def install
           bin.install "shamir"
